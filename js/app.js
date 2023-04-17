@@ -8,7 +8,7 @@ let timezone = 0;
 function countdown() {
     let $timezoneSelect = document.querySelector('.select'),
         timezone = parseInt((localStorage.getItem('timezone') == undefined) ? 0 : localStorage.getItem('timezone')),
-        dateEnd = new Date('2023-04-23 12:00:00'),
+        dateEnd = new Date('2023-04-23 10:00:00'),
         dateNow = (timezone === 0) ? new Date() : new Date().addHours(timezone),
         date = Math.floor((dateEnd.getTime() - dateNow.getTime()) / 1000),
         dataLeft = date,
